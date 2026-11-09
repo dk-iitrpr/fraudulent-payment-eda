@@ -16,37 +16,16 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 
 *All four members contributed code (see the commits)*
 
-<span>
 # Project Structure
+
 fraudulent-payment-eda/</br>
-├──data/dataset-part-001.csv</br>
-|---data/dataset-part-002.csv</br>
-|---data/dataset-part-003.csv</br>
-|---data/dataset-part-004.csv</br>
-|---data/dataset-part-005.csv#the original dataset contains 6362620 rows and 11 columns
-</span>
-
-
-digital-payment-fraud-detection/</br>
-├── data/</br>
-│&emsp;├── dataset-part-001.csv</br>
-│&emsp;├── dataset-part-002.csv</br>
-│&emsp;├── dataset-part-003.csv</br>
-│&emsp;├── dataset-part-004.csv</br>
-│&emsp;└── dataset-part-005.csv&emsp;&emsp;# The original dataset contains 6362620 rows and 11 columns
-│&emsp;└── processed/            # Cleaned / feature-engineered data
-├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_modeling.ipynb
-├── src/
-│   ├── data_preprocessing.py
-│   ├── features.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── predict.py
-├── models/                   # Saved trained models
-├── reports/
-│   └── figures/              # Plots: PR curve, confusion matrix, SHAP
-├── requirements.txt
-└── README.md
+&emsp;├── data/</br>
+&emsp;│&emsp;&ensp;├── dataset-part-001.csv</br>
+&emsp;│&emsp;&ensp;├── dataset-part-002.csv</br>
+&emsp;│&emsp;&ensp;├── dataset-part-003.csv</br>
+&emsp;│&emsp;&ensp;├── dataset-part-004.csv</br>
+&emsp;│&emsp;&ensp;└── dataset-part-005.csv&emsp;&emsp;# The original dataset contains 6362620 rows and 11 columns</br>
+&emsp;├── src/</br>
+&emsp;│&emsp;&ensp;├── eda.py</br>
+&emsp;├── requirements.txt</br>
+&emsp;└── README.md</br>
