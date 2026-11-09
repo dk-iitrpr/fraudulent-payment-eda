@@ -15,3 +15,11 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 | Ayati Jain | 2026MCB1520 | Video lead |
 
 *All four members contributed code (see the commits)*
+
+# Project Structure
+fraudulent-payment-eda/</br>
+|---data/dataset-part-001.csv
+|---data/dataset-part-002.csv
+|---data/dataset-part-003.csv
+|---data/dataset-part-004.csv
+|---data/dataset-part-005.csv           #the original dataset contains 6362620 rows and 11 columns
