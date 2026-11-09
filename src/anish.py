@@ -1,27 +1,11 @@
-import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
-
-# Load dataset
-df = pd.read_csv("data/fraud.csv")
-
-# Display dataset
-print(df.head())
-
-# Dataset information
-print("Dataset Shape:", df.shape)
-print(df.info())
-
-# Check missing values
-print(df.isnull().sum())
-
-# Count fraud and genuine transactions
-print(df["isFraud"].value_counts())
-
-# Plot fraud distribution
-plt.bar([0, 1], df["isFraud"].value_counts().sort_index())
-
-plt.title("Fraud vs Genuine Transactions")
-plt.xlabel("Transaction Type")
-plt.ylabel("Count")
-plt.savefig("fraud_distribution.png")
-plt.show()
+import seaborn as sns
+import sklearn
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import precision_score, recall_score, f1_score
