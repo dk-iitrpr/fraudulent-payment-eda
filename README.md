@@ -18,8 +18,8 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 
 # Project Structure
 fraudulent-payment-eda/</br>
-|---data/dataset-part-001.csv
-|---data/dataset-part-002.csv
-|---data/dataset-part-003.csv
-|---data/dataset-part-004.csv
+|---data/dataset-part-001.csv</br>
+|---data/dataset-part-002.csv</br>
+|---data/dataset-part-003.csv</br>
+|---data/dataset-part-004.csv</br>
 |---data/dataset-part-005.csv           #the original dataset contains 6362620 rows and 11 columns
