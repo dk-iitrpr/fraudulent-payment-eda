@@ -20,12 +20,12 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 
 fraudulent-payment-eda/</br>
 &emsp;├── data/</br>
-&emsp;│&emsp;&ensp;├── dataset-part-001.csv</br>
-&emsp;│&emsp;&ensp;├── dataset-part-002.csv</br>
-&emsp;│&emsp;&ensp;├── dataset-part-003.csv</br>
-&emsp;│&emsp;&ensp;├── dataset-part-004.csv</br>
-&emsp;│&emsp;&ensp;└── dataset-part-005.csv&emsp;&emsp;# The original dataset contains 6362620 rows and 11 columns</br>
+&emsp;&nbsp;&emsp;&ensp;├── dataset-part-001.csv</br>
+&emsp;&nbsp;&emsp;&ensp;├── dataset-part-002.csv</br>
+&emsp;&nbsp;&emsp;&ensp;├── dataset-part-003.csv</br>
+&emsp;&nbsp;&emsp;&ensp;├── dataset-part-004.csv</br>
+&emsp;&nbsp;&emsp;&ensp;└── dataset-part-005.csv&emsp;&emsp;# The original dataset contains 6362620 rows and 11 columns</br>
 &emsp;├── src/</br>
-&emsp;│&emsp;&ensp;├── eda.py</br>
+&emsp;&nbsp;&emsp;&ensp;├── eda.py</br>
 &emsp;├── requirements.txt</br>
 &emsp;└── README.md</br>
