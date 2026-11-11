@@ -112,7 +112,7 @@ or
 
 ```bash
 gh repo clone dk-iitrpr/fraudulent-payment-eda
-cd ai101_project82
+cd fraudulent-payment-eda
 ```
 
 2. Create a virtual environment (optional, but it keeps the project libraries separate from the rest of your system)
