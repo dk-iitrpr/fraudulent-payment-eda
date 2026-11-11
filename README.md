@@ -16,18 +16,140 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 
 *All four members contributed code (see the commits)*
 
+# Problem Statement
+Predicting whether a digital payment transaction is fraudulent or legitimate using transaction-related features.
+
+# Problem Objectives
+- Analyse the Online Payments Fraud Detection Dataset
+- Investigate the common patterns in a fraudulent payment
+- Build a model to detect whether the done payment is fraud or not
+
+# Dataset
+We used the "Online Payments Fraud Detection Dataset" dataset from Kaggle, made by Rupak Roy/ Bob.
+
+Link: https://www.kaggle.com/datasets/pythonafroz/renewable-power-generation-and-weather-conditions
+
+The file is in 5 splits in the data/ folder. Some basic facts about it:
+
+6,362,620 rows and 11 columns
+Readings were last updated was in 2021
+No missing values and no duplicate rows
+
+Columns :
+| Column | What it represents |
+|---|---|
+| step | represents a unit of time where 1 step equals 1 hour |
+| type | type of online transaction |
+| amount | the amount of the transaction |
+| nameOrig | customer starting the transaction |
+| oldbalanceOrg | balance before the transaction |
+| newbalanceOrg | balance after the transaction |
+| nameDest | recipient of the transaction |
+| oldbalanceDest | initial balance of recipient before the transaction |
+| newbalanceDest | the new balance of recipient after the transaction |
+| isFraud | fraud transaction |
+
+## What we did
+
+1. Looked at the data (size, column types, first few rows).
+2. Cleaned it: checked for missing values and duplicates, and converted the Time column to a proper date-time format.
+3. Explored it with summary statistics.
+4. Calculated correlations between all the columns.
+5. Choose which columns are needed
+6. Trained a Logistic Regression model.
+7. Wrote down what we found.
+
+All of the results are in the folder `outputs/`.
+
 # Project Structure
 
-fraudulent-payment-eda/</br>
-&emsp;├── data/</br>
-&emsp;&nbsp;&emsp;&ensp;├── dataset-part-001.csv</br>
-&emsp;&nbsp;&emsp;&ensp;├── dataset-part-002.csv</br>
-&emsp;&nbsp;&emsp;&ensp;├── dataset-part-003.csv</br>
-&emsp;&nbsp;&emsp;&ensp;├── dataset-part-004.csv</br>
-&emsp;&nbsp;&emsp;&ensp;└── dataset-part-005.csv&emsp;&emsp;# The original dataset contains 6362620 rows and 11 columns</br>
-&emsp;├── src/</br>
-&emsp;&nbsp;&emsp;&ensp;├── eda.py</br>
-&emsp;├── requirements.txt</br>
-&emsp;└── README.md</br>
+```text
 
-<br>
+fraudulent-payment-eda/
+    ├── data/
+    |     ├── dataset-part-001.csv
+    |     ├── dataset-part-002.csv
+    |     ├── dataset-part-003.csv
+    |     ├── dataset-part-004.csv
+    |     └── dataset-part-005.csv      # The original dataset contains 6362620 rows and 11 columns
+    |
+    ├── outputs/
+    |
+    ├── src/
+    |     ├── config.py      # paths, constants, random seed
+    │     ├── data.py        # load + split
+    │     ├── model.py       # build_model()
+    │     ├── evaluate.py    # metrics + plots
+    │     └── main.py        # entry point: calls the above in order
+    |
+    ├── requirements.txt
+    └── README.md
+
+```
+
+What each script does:
+
+- `main.py` runs the other three scripts in order using Python's `subprocess` module. It also sets the main project folder as the working directory, so the code finds `data/.csv` and saves outputs in the right place no matter where you start it from.
+- `data.py` combines all the datasets along featuring the needed columns and form a split_data function.
+- `model.py` contains the logistic models function.
+- `evaluate.py` generates the statistics and results and saves the graphs in `outputs/` for a dataset fed in the `main.py`.
+- `config.py` retains the path of the output results in `.pngs` and `.json`
+
+
+# Setup in detail
+
+## Prerequisties
+- Python 3.10+
+- Pip installed
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.git
+
+or
+
+gh repo clone dk-iitrpr/fraudulent-payment-eda
+cd ai101_project82
+```
+
+2. Create a virtual environment (optional, but it keeps the project libraries separate from the rest of your system)
+
+```bash
+python -m venv venv
+source venv\bin\activate    #Windows: venv\Scripts\activate
+```
+
+3. Install the libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+`requirements.txt` should contain:
+
+```text
+numpy
+pandas
+matplotlib
+scikit-learn
+```
+
+4. Make sure all 5 `.csv` are inside the `data/` folder.
+
+5. Run the project
+
+```bash
+python src/main.py
+```
+
+Use `python3` instead of `python` on Mac or Linux if needed. If everything works, the last line printed in the terminal is "All steps completed successfully!". After that you can open the `outputs/` folder to see the graphs and json file.
+
+## Expected Outputs
+
+### Project Links
+- Presentation Slides (in `.pdf` form) : 
+- Demonstration Video : 
+
+### Ai-use discloser
+Claude was used as a supporting tool during this project for understanding machine learning concepts and improving the code. The project implementation, model execution, result analysis, and final decisions were carried out and reviewed by the team.
