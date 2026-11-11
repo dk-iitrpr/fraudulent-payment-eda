@@ -108,10 +108,9 @@ What each script does:
 git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.gi
 ```
 
-or
+then
 
 ```bash
-gh repo clone dk-iitrpr/fraudulent-payment-eda
 cd fraudulent-payment-eda
 ```
 
