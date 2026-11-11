@@ -23,7 +23,4 @@ with open('outputs/metrics.json', 'r', encoding='utf-8') as file:
 
 print("The model is based on Logistic Regression","&","Accuracy over the model :", round(list(data.values())[0]*100, 2),"%")
 
-
-
-
-
+print("All steps completed")
