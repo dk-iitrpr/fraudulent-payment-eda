@@ -2,9 +2,9 @@
 
 Predicting whether a payment transaction is fraudulent or legitimate using logistic regression.
 
-<a href="#" style="background-color: #000000; color: #0055aa; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; margin-right: 5px;">AI101 Mini-Project</a>
-<a href="#" style="background-color: #000000; color: #0055aa; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; margin-right: 5px;">Team 17</a>
-<a href="#" style="background-color: #000000; color: #0055aa; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold;">Python 3.12+</a>
+<a href="#" style="background-color: #ffffff; color: #111111; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; margin-right: 5px;">AI101 Mini-Project</a>
+<a href="#" style="background-color: #ffffff; color: #111111; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; margin-right: 5px;">Team 17</a>
+<a href="#" style="background-color: #ffffff; color: #111111; padding: 4px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold;">Python 3.12+</a>
 
 ***TEAM and their Roles***
 | Member | Entry no. | Role | GitHub Handle |
@@ -67,22 +67,24 @@ All of the results are in the folder `outputs/`.
 
 fraudulent-payment-eda/
     ├── data/
-    |     ├── dataset-part-001.csv
-    |     ├── dataset-part-002.csv
-    |     ├── dataset-part-003.csv
-    |     ├── dataset-part-004.csv
-    |     └── dataset-part-005.csv      # The original dataset contains 6362620 rows and 11 columns
+    |   ├── dataset-part-001.csv
+    |   ├── dataset-part-002.csv
+    |   ├── dataset-part-003.csv
+    |   ├── dataset-part-004.csv
+    |   └── dataset-part-005.csv      # The original dataset contains 6362620 rows and 11 columns
     |
-    ├── outputs/
+    ├── outputs/                      #contains all the resulted graphs and .json file
     |
     ├── src/
-    |     ├── config.py      # paths, constants, random seed
-    │     ├── data.py        # load + split
-    │     ├── model.py       # build_model()
-    │     ├── evaluate.py    # metrics + plots
-    │     └── main.py        # entry point: calls the above in order
+    |   ├── config.py                 # paths, constants, random seed
+    │   ├── data.py                   # load + split
+    │   ├── model.py                  # build_model()
+    │   ├── evaluate.py               # metrics + plots
+    │   └── main.py                   # entry point: calls the above in order
     |
-    ├── requirements.txt
+    ├── Group 21 Mini-Project Presentation_Final.pdf
+    ├── requirements.txt              #required libraries' details are stored here
+    ├── requirements.txt              #required libraries' details are stored here
     └── README.md
 
 ```
@@ -98,8 +100,8 @@ What each script does:
 
 # Setup in detail
 
-## Prerequisties
-- Python 3.10+
+### Prerequisites
+- Python 3.12+
 - Pip installed
 
 1. Clone the repository
@@ -118,7 +120,9 @@ cd fraudulent-payment-eda
 
 ```bash
 python -m venv venv
-source venv\bin\activate    #Windows: venv\Scripts\activate
+```
+```bash
+source venv/bin/activate    #Windows: venv/Scripts/activate
 ```
 
 3. Install the libraries
@@ -177,8 +181,8 @@ After successfully executing the python files, the project produces:
 ![TPR vs FPR](outputs/roc_curve.png)
 
 ## Project Links
-- Presentation Slides (in `.pdf` form) : 
-- Demonstration Video : 
+- Presentation Slides (in `.pdf` form) : Group 21 Mini-Project Presentation_Final.pdf
+- Demonstration Video : Presentation.mp4
 
 # Ai-use discloser
 Claude was used as a supporting tool during this project for understanding machine learning concepts and improving the code. The project implementation, model execution, result analysis, and final decisions were carried out and reviewed by the team.
