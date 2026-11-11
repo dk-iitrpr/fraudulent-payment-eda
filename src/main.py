@@ -11,7 +11,6 @@ def main():
     model.fit(X_train, y_train)
 
     evaluate(model, X_train, y_train, X_test, y_test, feature_names)
-    
     print
 
 main()
@@ -20,6 +19,7 @@ import json
 
 with open('outputs/metrics.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
+
 
 print("The model is based on Logistic Regression","&","Accuracy over the model :", round(list(data.values())[0]*100, 2),"%")
 
