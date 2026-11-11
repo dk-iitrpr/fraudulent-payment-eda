@@ -105,10 +105,12 @@ What each script does:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.git
+git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.gi
+```
 
 or
 
+```bash
 gh repo clone dk-iitrpr/fraudulent-payment-eda
 cd ai101_project82
 ```
@@ -145,7 +147,35 @@ python src/main.py
 
 Use `python3` instead of `python` on Mac or Linux if needed. If everything works, the last line printed in the terminal is "All steps completed successfully!". After that you can open the `outputs/` folder to see the graphs and json file.
 
-## Expected Outputs
+## Expected Output
+
+After successfully executing the python files, the project produces:
+
+- Confusion Matrix
+- Metrics.json
+- odds ratios.
+- ROC curve.
+
+### Model Evaluation Results
+
+| Metric | Value |
+|---|---:|
+| accuracy | 0.9991693673360974 |
+| precision | 0.8927613941018767 |
+| recall | 0.40535605599513086 |
+| f1 | 0.5575554625366262 |
+| roc_auc | 0.971716274345499 |
+| baseline_accuracy | 0.9987088652159016 |
+
+### Output Screenshots
+
+**Confusion Matrix**
+
+![Actual vs Predicted](outputs/confusion_matrix.png)
+
+**ROC curve**
+
+![TPR vs FPR](outputs/roc_curve.png)
 
 ### Project Links
 - Presentation Slides (in `.pdf` form) : 
