@@ -177,9 +177,9 @@ After successfully executing the python files, the project produces:
 
 ![TPR vs FPR](outputs/roc_curve.png)
 
-### Project Links
+## Project Links
 - Presentation Slides (in `.pdf` form) : 
 - Demonstration Video : 
 
-### Ai-use discloser
+# Ai-use discloser
 Claude was used as a supporting tool during this project for understanding machine learning concepts and improving the code. The project implementation, model execution, result analysis, and final decisions were carried out and reviewed by the team.
