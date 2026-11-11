@@ -30,14 +30,14 @@ def evaluate(model, X_train, y_train, X_test, y_test, feature_names):
     ConfusionMatrixDisplay.from_predictions(y_test, y_pred, cmap="Blues")
     plt.title("Confusion matrix (test set)")
     plt.savefig(OUT / "confusion_matrix.png", dpi=150, bbox_inches="tight")
-    plt.show
+    plt.show()
     plt.close()
 
     RocCurveDisplay.from_predictions(y_test, y_prob)
     plt.plot([0, 1], [0, 1], "k--", label="Chance")
     plt.legend()
     plt.savefig(OUT / "roc_curve.png", dpi=150, bbox_inches="tight")
-    plt.show
+    plt.show()
     plt.close()
 
     coefs = model.named_steps["logisticregression"].coef_[0]

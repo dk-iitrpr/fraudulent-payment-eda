@@ -12,7 +12,7 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 | Dikshant Kansal | 2026EEB1345 | Documentation lead | dk-iitrpr |
 | Anish Meena | 2026AIB1016 | Run and reproducibility lead | AnishMeena03 |
 | Nikita Patel | 2026ESB1484 | PPT lead | 2026esb1484-cmd |
-| Ayati Jain | 2026MCB1520 | Video lead | Ayati-iitrpr |
+| Ayati Jain | 2026MCB1520 | Video lead | Ayati-itrpr |
 
 *All four members contributed code (see the commits)*
 
@@ -106,11 +106,12 @@ What each script does:
 
 ```bash
 git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.git
+```
 
-or
+then
 
-gh repo clone dk-iitrpr/fraudulent-payment-eda
-cd ai101_project82
+```bash
+cd fraudulent-payment-eda
 ```
 
 2. Create a virtual environment (optional, but it keeps the project libraries separate from the rest of your system)
@@ -145,11 +146,39 @@ python src/main.py
 
 Use `python3` instead of `python` on Mac or Linux if needed. If everything works, the last line printed in the terminal is "All steps completed successfully!". After that you can open the `outputs/` folder to see the graphs and json file.
 
-## Expected Outputs
+## Expected Output
 
-### Project Links
+After successfully executing the python files, the project produces:
+
+- Confusion Matrix
+- Metrics.json
+- odds ratios.
+- ROC curve.
+
+### Model Evaluation Results
+
+| Metric | Value |
+|---|---:|
+| accuracy | 0.9991693673360974 |
+| precision | 0.8927613941018767 |
+| recall | 0.40535605599513086 |
+| f1 | 0.5575554625366262 |
+| roc_auc | 0.971716274345499 |
+| baseline_accuracy | 0.9987088652159016 |
+
+### Output Screenshots
+
+**Confusion Matrix**
+
+![Actual vs Predicted](outputs/confusion_matrix.png)
+
+**ROC curve**
+
+![TPR vs FPR](outputs/roc_curve.png)
+
+## Project Links
 - Presentation Slides (in `.pdf` form) : 
 - Demonstration Video : 
 
-### Ai-use discloser
+# Ai-use discloser
 Claude was used as a supporting tool during this project for understanding machine learning concepts and improving the code. The project implementation, model execution, result analysis, and final decisions were carried out and reviewed by the team.
