@@ -12,7 +12,7 @@ Predicting whether a payment transaction is fraudulent or legitimate using logis
 | Dikshant Kansal | 2026EEB1345 | Documentation lead | dk-iitrpr |
 | Anish Meena | 2026AIB1016 | Run and reproducibility lead | AnishMeena03 |
 | Nikita Patel | 2026ESB1484 | PPT lead | 2026esb1484-cmd |
-| Ayati Jain | 2026MCB1520 | Video lead | Ayati-iitrpr |
+| Ayati Jain | 2026MCB1520 | Video lead | Ayati-itrpr |
 
 *All four members contributed code (see the commits)*
 
