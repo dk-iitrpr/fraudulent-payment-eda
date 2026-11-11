@@ -105,7 +105,7 @@ What each script does:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.gi
+git clone https://github.com/dk-iitrpr/fraudulent-payment-eda.git
 ```
 
 then
